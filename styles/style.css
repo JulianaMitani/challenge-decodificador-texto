@@ -1,0 +1,227 @@
+:root {
+    --dark-blue-100: #609ED4;
+    --cor-white: white;
+    --cor-gray400: #495057;
+    --light-blue-100: #F3F5FC;
+    --dark-blue-300: #0A3871;
+    --cinza-botao: #D8DFE8;
+    
+    --fonte-primaria: 'Inter', Medium;
+    --fonte-secundaria: 'Inter', Light;
+    --fonte-terciaria: 'Inter', Bold;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: var(--light-blue-100);
+    font-family: var(--fonte-primaria);
+    color: var(--dark-blue-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    max-width: 75rem;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vetor_A {
+    position: fixed;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.Digite__seu__texto, .resposta-do-texto {
+    position: fixed;
+    color: var(--dark-blue-300);
+    font-size: 1rem;
+    left: 15rem;
+    top: 10.5rem;
+    opacity: 1;
+    border: none;
+    background-color: var(--light-blue-100);
+}
+
+.Digite__seu__texto{
+        font-family: var(--fonte-primaria);
+        width: 32rem;
+}
+
+
+
+.icone__alerta, .alerta-texto {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 29.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    left: 15rem;
+}
+
+.alerta-texto{
+    font-size: 1rem;
+}
+
+
+.icone-alerta {
+    height: 0.75rem;
+    width: 0.75rem;  
+}
+
+
+.apenas-letras { 
+    color: var(--cor-gray400);
+    font-size: 0.75rem;
+    font-family: var(--fonte-primaria); 
+    top: 53.1875;
+    
+}
+
+.botoes {
+    display: flex;
+    text-align: center;
+    border-radius: 1.5rem;
+    position: fixed;
+    left: 14.75rem;
+    top: 31rem;
+    gap: 1.5625rem;
+
+}
+
+.botao-criptografar {
+    width: 15rem;
+    text-align: center;
+    background-color:var(--dark-blue-300);
+    border-radius: 1rem;
+    font: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.botao-criptografar:hover {
+    background-color: #054797;
+}
+
+.botao-descriptografar {
+    width: 15rem;
+    text-align: center;
+    background-color:var(--cinza-botao);
+    border-radius: 1rem;
+    font: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: var(--dark-blue-300);
+    text-decoration: none;
+}
+
+.botao-descriptografar:hover, .botao-copiar:hover {
+    background-color: var(--light-blue-100); }
+
+.box-resposta {
+    align-items: center;
+    position: fixed;
+    left: 50rem;
+}
+
+.retangulo {
+    display: fixed;
+    width: 25rem;
+    height: 38rem;
+    padding: 5%;
+}
+
+.destaque-nenhuma-mensagem, .digite-criptografar {
+    display: flex;
+    width: 18rem ;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.destaque-nenhuma-mensagem {
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+    font-size: 1.2rem;
+    color: var(--dark-blue-300);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+.digite-criptografar {
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+    font-size: 1rem;
+    color: var(--dark-blue-300);
+    top: 70%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+.botao-copiar {
+    left: 55rem;
+    top: 31rem;
+    position: fixed;
+    width: 15rem;
+    text-align: center;
+    background-color:var(--cinza-botao);
+    border-radius: 1rem;
+    font: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: var(--dark-blue-300);
+    text-decoration: none;
+    z-index: 3;
+}
+
+.lupa {
+    left: 55rem;
+    top: 5rem;
+    position: fixed;
+    width: 15rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.resposta-do-texto{
+    position: fixed;
+    color: var(--cor-gray400);
+    font-size: 0.9rem;
+    left: 56rem;
+    top: 6rem;
+    opacity: 1;
+    border: none;
+    background-color: var(--cor-white);
+    font-family: var(--fonte-terciaria);
+    width: 13rem;
+    height: 18rem;
+    display: inline-block;
+}
